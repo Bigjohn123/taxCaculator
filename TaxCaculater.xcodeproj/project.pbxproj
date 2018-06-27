@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C8EB9AB9BC0EF80A7C8E6B1 /* libPods-TaxCaculater.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3067AD15C895B7FDB5C915B9 /* libPods-TaxCaculater.a */; };
+		8467B046208B4358001474CF /* PdTaxTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8467B044208B4358001474CF /* PdTaxTitleCell.m */; };
+		8467B047208B4358001474CF /* PdTaxTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8467B045208B4358001474CF /* PdTaxTitleCell.xib */; };
+		8467B04D208B6E05001474CF /* PdTaxSumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8467B04B208B6E05001474CF /* PdTaxSumCell.m */; };
+		8467B051208C5205001474CF /* PdIndividualTaxSumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8467B050208C5205001474CF /* PdIndividualTaxSumModel.m */; };
+		8471EE9820CD7EE000D8B747 /* TaxTitleHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8471EE9720CD7EE000D8B747 /* TaxTitleHeadView.xib */; };
+		8471EE9B20D415CD00D8B747 /* WXLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8471EE9A20D415CD00D8B747 /* WXLabel.m */; };
+		8471EE9E20D419F800D8B747 /* TaxFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8471EE9D20D419F800D8B747 /* TaxFormView.m */; };
+		8471EEA020D41A1200D8B747 /* TaxFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8471EE9F20D41A1200D8B747 /* TaxFormView.xib */; };
+		84B37B34207B9B140059B6AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B37B33207B9B140059B6AA /* main.m */; };
+		84B37B37207B9B140059B6AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B37B36207B9B140059B6AA /* AppDelegate.m */; };
+		84B37B3F207B9B140059B6AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B37B3E207B9B140059B6AA /* Assets.xcassets */; };
+		84B37B42207B9B140059B6AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B37B40207B9B140059B6AA /* LaunchScreen.storyboard */; };
+		84B37B4D207B9B140059B6AA /* TaxCaculaterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B37B4C207B9B140059B6AA /* TaxCaculaterTests.m */; };
+		84B37B58207B9B140059B6AA /* TaxCaculaterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B37B57207B9B140059B6AA /* TaxCaculaterUITests.m */; };
+		84B37B7A207E45C50059B6AA /* TaxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B37B73207E45C50059B6AA /* TaxViewController.m */; };
+		84B37B7B207E45C50059B6AA /* PdCollectionViewImageSudokuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B37B76207E45C50059B6AA /* PdCollectionViewImageSudokuLayout.m */; };
+		84B37B7C207E45C50059B6AA /* PdSudokuItemLayoutConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B37B78207E45C50059B6AA /* PdSudokuItemLayoutConfigurator.m */; };
+		84B37B80207E47000059B6AA /* UIViewController+PdLogInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B37B7F207E47000059B6AA /* UIViewController+PdLogInfo.m */; };
+		84B37B8D207E53060059B6AA /* TaxModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B37B8C207E53060059B6AA /* TaxModel.m */; };
+		84B37B96207E547F0059B6AA /* PersonInsuranceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B37B95207E547F0059B6AA /* PersonInsuranceModel.m */; };
+		84B37B99207E549B0059B6AA /* CompanyInsuranceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B37B98207E549B0059B6AA /* CompanyInsuranceModel.m */; };
+		84B37B9D207E58D50059B6AA /* PdTaxInsuranceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B37B9B207E58D50059B6AA /* PdTaxInsuranceCell.m */; };
+		84B37B9E207E58D50059B6AA /* PdTaxInsuranceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B37B9C207E58D50059B6AA /* PdTaxInsuranceCell.xib */; };
+		84B37BA2207E590A0059B6AA /* PdTaxMoneyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B37BA0207E590A0059B6AA /* PdTaxMoneyCell.m */; };
+		84B37BA3207E590A0059B6AA /* PdTaxMoneyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B37BA1207E590A0059B6AA /* PdTaxMoneyCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84B37B49207B9B140059B6AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84B37B27207B9B140059B6AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84B37B2E207B9B140059B6AA;
+			remoteInfo = TaxCaculater;
+		};
+		84B37B54207B9B140059B6AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84B37B27207B9B140059B6AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84B37B2E207B9B140059B6AA;
+			remoteInfo = TaxCaculater;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0933681CF8A7890AD4B2B38F /* libPods-TaxCaculaterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaxCaculaterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3067AD15C895B7FDB5C915B9 /* libPods-TaxCaculater.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaxCaculater.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8467B043208B4358001474CF /* PdTaxTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdTaxTitleCell.h; sourceTree = "<group>"; };
+		8467B044208B4358001474CF /* PdTaxTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdTaxTitleCell.m; sourceTree = "<group>"; };
+		8467B045208B4358001474CF /* PdTaxTitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PdTaxTitleCell.xib; sourceTree = "<group>"; };
+		8467B04A208B6E05001474CF /* PdTaxSumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdTaxSumCell.h; sourceTree = "<group>"; };
+		8467B04B208B6E05001474CF /* PdTaxSumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdTaxSumCell.m; sourceTree = "<group>"; };
+		8467B04F208C5205001474CF /* PdIndividualTaxSumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdIndividualTaxSumModel.h; sourceTree = "<group>"; };
+		8467B050208C5205001474CF /* PdIndividualTaxSumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdIndividualTaxSumModel.m; sourceTree = "<group>"; };
+		8471EE9720CD7EE000D8B747 /* TaxTitleHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaxTitleHeadView.xib; sourceTree = "<group>"; };
+		8471EE9920D415CD00D8B747 /* WXLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXLabel.h; sourceTree = "<group>"; };
+		8471EE9A20D415CD00D8B747 /* WXLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXLabel.m; sourceTree = "<group>"; };
+		8471EE9C20D419F800D8B747 /* TaxFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxFormView.h; sourceTree = "<group>"; };
+		8471EE9D20D419F800D8B747 /* TaxFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxFormView.m; sourceTree = "<group>"; };
+		8471EE9F20D41A1200D8B747 /* TaxFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaxFormView.xib; sourceTree = "<group>"; };
+		84B37B2F207B9B140059B6AA /* TaxCaculater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaxCaculater.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B37B33207B9B140059B6AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84B37B35207B9B140059B6AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84B37B36207B9B140059B6AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84B37B3E207B9B140059B6AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84B37B41207B9B140059B6AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84B37B43207B9B140059B6AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B37B48207B9B140059B6AA /* TaxCaculaterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaxCaculaterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B37B4C207B9B140059B6AA /* TaxCaculaterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaxCaculaterTests.m; sourceTree = "<group>"; };
+		84B37B4E207B9B140059B6AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B37B53207B9B140059B6AA /* TaxCaculaterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaxCaculaterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B37B57207B9B140059B6AA /* TaxCaculaterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaxCaculaterUITests.m; sourceTree = "<group>"; };
+		84B37B59207B9B140059B6AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B37B6C207E41C90059B6AA /* TaxCaculater.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxCaculater.pch; sourceTree = "<group>"; };
+		84B37B72207E45C50059B6AA /* TaxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxViewController.h; sourceTree = "<group>"; };
+		84B37B73207E45C50059B6AA /* TaxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxViewController.m; sourceTree = "<group>"; };
+		84B37B75207E45C50059B6AA /* PdCollectionViewImageSudokuLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdCollectionViewImageSudokuLayout.h; sourceTree = "<group>"; };
+		84B37B76207E45C50059B6AA /* PdCollectionViewImageSudokuLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdCollectionViewImageSudokuLayout.m; sourceTree = "<group>"; };
+		84B37B77207E45C50059B6AA /* PdSudokuItemLayoutConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdSudokuItemLayoutConfigurator.h; sourceTree = "<group>"; };
+		84B37B78207E45C50059B6AA /* PdSudokuItemLayoutConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdSudokuItemLayoutConfigurator.m; sourceTree = "<group>"; };
+		84B37B7E207E47000059B6AA /* UIViewController+PdLogInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PdLogInfo.h"; sourceTree = "<group>"; };
+		84B37B7F207E47000059B6AA /* UIViewController+PdLogInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PdLogInfo.m"; sourceTree = "<group>"; };
+		84B37B87207E4A1C0059B6AA /* PdMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdMacro.h; sourceTree = "<group>"; };
+		84B37B89207E4A700059B6AA /* PdColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdColor.h; sourceTree = "<group>"; };
+		84B37B8B207E53060059B6AA /* TaxModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxModel.h; sourceTree = "<group>"; };
+		84B37B8C207E53060059B6AA /* TaxModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxModel.m; sourceTree = "<group>"; };
+		84B37B94207E547F0059B6AA /* PersonInsuranceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonInsuranceModel.h; sourceTree = "<group>"; };
+		84B37B95207E547F0059B6AA /* PersonInsuranceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonInsuranceModel.m; sourceTree = "<group>"; };
+		84B37B97207E549B0059B6AA /* CompanyInsuranceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyInsuranceModel.h; sourceTree = "<group>"; };
+		84B37B98207E549B0059B6AA /* CompanyInsuranceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyInsuranceModel.m; sourceTree = "<group>"; };
+		84B37B9A207E58D50059B6AA /* PdTaxInsuranceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdTaxInsuranceCell.h; sourceTree = "<group>"; };
+		84B37B9B207E58D50059B6AA /* PdTaxInsuranceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdTaxInsuranceCell.m; sourceTree = "<group>"; };
+		84B37B9C207E58D50059B6AA /* PdTaxInsuranceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PdTaxInsuranceCell.xib; sourceTree = "<group>"; };
+		84B37B9F207E590A0059B6AA /* PdTaxMoneyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdTaxMoneyCell.h; sourceTree = "<group>"; };
+		84B37BA0207E590A0059B6AA /* PdTaxMoneyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdTaxMoneyCell.m; sourceTree = "<group>"; };
+		84B37BA1207E590A0059B6AA /* PdTaxMoneyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PdTaxMoneyCell.xib; sourceTree = "<group>"; };
+		9E2E7BEEEDA24E4572BC7E67 /* Pods-TaxCaculater.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxCaculater.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaxCaculater/Pods-TaxCaculater.debug.xcconfig"; sourceTree = "<group>"; };
+		AC758CEDC283A4DD0F3DE1F8 /* libPods-TaxCaculaterUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaxCaculaterUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEEE1EC223D63CC29739B5AF /* Pods-TaxCaculater.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxCaculater.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaxCaculater/Pods-TaxCaculater.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84B37B2C207B9B140059B6AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C8EB9AB9BC0EF80A7C8E6B1 /* libPods-TaxCaculater.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B37B45207B9B140059B6AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B37B50207B9B140059B6AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84B37B26207B9B140059B6AA = {
+			isa = PBXGroup;
+			children = (
+				84B37B31207B9B140059B6AA /* TaxCaculater */,
+				84B37B4B207B9B140059B6AA /* TaxCaculaterTests */,
+				84B37B56207B9B140059B6AA /* TaxCaculaterUITests */,
+				84B37B30207B9B140059B6AA /* Products */,
+				B10608363FD0006DF016EBD8 /* Pods */,
+				B1FAEE7C7001951A0547E1CF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84B37B30207B9B140059B6AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84B37B2F207B9B140059B6AA /* TaxCaculater.app */,
+				84B37B48207B9B140059B6AA /* TaxCaculaterTests.xctest */,
+				84B37B53207B9B140059B6AA /* TaxCaculaterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84B37B31207B9B140059B6AA /* TaxCaculater */ = {
+			isa = PBXGroup;
+			children = (
+				84B37B70207E45C50059B6AA /* Base */,
+				84B37B71207E45C50059B6AA /* Main */,
+				84B37B79207E45C50059B6AA /* Utility */,
+				84B37B68207B9B5E0059B6AA /* ThirdSDK */,
+				84B37B35207B9B140059B6AA /* AppDelegate.h */,
+				84B37B36207B9B140059B6AA /* AppDelegate.m */,
+				84B37B3E207B9B140059B6AA /* Assets.xcassets */,
+				84B37B40207B9B140059B6AA /* LaunchScreen.storyboard */,
+				84B37B43207B9B140059B6AA /* Info.plist */,
+				84B37B32207B9B140059B6AA /* Supporting Files */,
+			);
+			path = TaxCaculater;
+			sourceTree = "<group>";
+		};
+		84B37B32207B9B140059B6AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84B37B33207B9B140059B6AA /* main.m */,
+				84B37B6C207E41C90059B6AA /* TaxCaculater.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84B37B4B207B9B140059B6AA /* TaxCaculaterTests */ = {
+			isa = PBXGroup;
+			children = (
+				84B37B4C207B9B140059B6AA /* TaxCaculaterTests.m */,
+				84B37B4E207B9B140059B6AA /* Info.plist */,
+			);
+			path = TaxCaculaterTests;
+			sourceTree = "<group>";
+		};
+		84B37B56207B9B140059B6AA /* TaxCaculaterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84B37B57207B9B140059B6AA /* TaxCaculaterUITests.m */,
+				84B37B59207B9B140059B6AA /* Info.plist */,
+			);
+			path = TaxCaculaterUITests;
+			sourceTree = "<group>";
+		};
+		84B37B68207B9B5E0059B6AA /* ThirdSDK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ThirdSDK;
+			sourceTree = "<group>";
+		};
+		84B37B70207E45C50059B6AA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		84B37B71207E45C50059B6AA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				84B37B8A207E52C60059B6AA /* model */,
+				84B37B72207E45C50059B6AA /* TaxViewController.h */,
+				84B37B73207E45C50059B6AA /* TaxViewController.m */,
+				84B37B74207E45C50059B6AA /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		84B37B74207E45C50059B6AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84B37B75207E45C50059B6AA /* PdCollectionViewImageSudokuLayout.h */,
+				84B37B76207E45C50059B6AA /* PdCollectionViewImageSudokuLayout.m */,
+				84B37B77207E45C50059B6AA /* PdSudokuItemLayoutConfigurator.h */,
+				84B37B78207E45C50059B6AA /* PdSudokuItemLayoutConfigurator.m */,
+				84B37B9A207E58D50059B6AA /* PdTaxInsuranceCell.h */,
+				84B37B9B207E58D50059B6AA /* PdTaxInsuranceCell.m */,
+				84B37B9C207E58D50059B6AA /* PdTaxInsuranceCell.xib */,
+				84B37B9F207E590A0059B6AA /* PdTaxMoneyCell.h */,
+				84B37BA0207E590A0059B6AA /* PdTaxMoneyCell.m */,
+				84B37BA1207E590A0059B6AA /* PdTaxMoneyCell.xib */,
+				8467B043208B4358001474CF /* PdTaxTitleCell.h */,
+				8467B044208B4358001474CF /* PdTaxTitleCell.m */,
+				8467B045208B4358001474CF /* PdTaxTitleCell.xib */,
+				8467B04A208B6E05001474CF /* PdTaxSumCell.h */,
+				8467B04B208B6E05001474CF /* PdTaxSumCell.m */,
+				8471EE9720CD7EE000D8B747 /* TaxTitleHeadView.xib */,
+				8471EE9920D415CD00D8B747 /* WXLabel.h */,
+				8471EE9A20D415CD00D8B747 /* WXLabel.m */,
+				8471EE9C20D419F800D8B747 /* TaxFormView.h */,
+				8471EE9D20D419F800D8B747 /* TaxFormView.m */,
+				8471EE9F20D41A1200D8B747 /* TaxFormView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84B37B79207E45C50059B6AA /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				84B37B88207E4A700059B6AA /* PdColor */,
+				84B37B86207E4A1C0059B6AA /* Macro */,
+				84B37B7D207E47000059B6AA /* Log */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		84B37B7D207E47000059B6AA /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				84B37B7E207E47000059B6AA /* UIViewController+PdLogInfo.h */,
+				84B37B7F207E47000059B6AA /* UIViewController+PdLogInfo.m */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		84B37B86207E4A1C0059B6AA /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				84B37B87207E4A1C0059B6AA /* PdMacro.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		84B37B88207E4A700059B6AA /* PdColor */ = {
+			isa = PBXGroup;
+			children = (
+				84B37B89207E4A700059B6AA /* PdColor.h */,
+			);
+			path = PdColor;
+			sourceTree = "<group>";
+		};
+		84B37B8A207E52C60059B6AA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				84B37B8B207E53060059B6AA /* TaxModel.h */,
+				84B37B8C207E53060059B6AA /* TaxModel.m */,
+				84B37B94207E547F0059B6AA /* PersonInsuranceModel.h */,
+				84B37B95207E547F0059B6AA /* PersonInsuranceModel.m */,
+				84B37B97207E549B0059B6AA /* CompanyInsuranceModel.h */,
+				84B37B98207E549B0059B6AA /* CompanyInsuranceModel.m */,
+				8467B04F208C5205001474CF /* PdIndividualTaxSumModel.h */,
+				8467B050208C5205001474CF /* PdIndividualTaxSumModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B10608363FD0006DF016EBD8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E2E7BEEEDA24E4572BC7E67 /* Pods-TaxCaculater.debug.xcconfig */,
+				BEEE1EC223D63CC29739B5AF /* Pods-TaxCaculater.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B1FAEE7C7001951A0547E1CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3067AD15C895B7FDB5C915B9 /* libPods-TaxCaculater.a */,
+				0933681CF8A7890AD4B2B38F /* libPods-TaxCaculaterTests.a */,
+				AC758CEDC283A4DD0F3DE1F8 /* libPods-TaxCaculaterUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84B37B2E207B9B140059B6AA /* TaxCaculater */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B37B5C207B9B140059B6AA /* Build configuration list for PBXNativeTarget "TaxCaculater" */;
+			buildPhases = (
+				DD77D91C0254F07357FF0937 /* [CP] Check Pods Manifest.lock */,
+				84B37B2B207B9B140059B6AA /* Sources */,
+				84B37B2C207B9B140059B6AA /* Frameworks */,
+				84B37B2D207B9B140059B6AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaxCaculater;
+			productName = TaxCaculater;
+			productReference = 84B37B2F207B9B140059B6AA /* TaxCaculater.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84B37B47207B9B140059B6AA /* TaxCaculaterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B37B5F207B9B140059B6AA /* Build configuration list for PBXNativeTarget "TaxCaculaterTests" */;
+			buildPhases = (
+				84B37B44207B9B140059B6AA /* Sources */,
+				84B37B45207B9B140059B6AA /* Frameworks */,
+				84B37B46207B9B140059B6AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84B37B4A207B9B140059B6AA /* PBXTargetDependency */,
+			);
+			name = TaxCaculaterTests;
+			productName = TaxCaculaterTests;
+			productReference = 84B37B48207B9B140059B6AA /* TaxCaculaterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84B37B52207B9B140059B6AA /* TaxCaculaterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B37B62207B9B140059B6AA /* Build configuration list for PBXNativeTarget "TaxCaculaterUITests" */;
+			buildPhases = (
+				84B37B4F207B9B140059B6AA /* Sources */,
+				84B37B50207B9B140059B6AA /* Frameworks */,
+				84B37B51207B9B140059B6AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84B37B55207B9B140059B6AA /* PBXTargetDependency */,
+			);
+			name = TaxCaculaterUITests;
+			productName = TaxCaculaterUITests;
+			productReference = 84B37B53207B9B140059B6AA /* TaxCaculaterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84B37B27207B9B140059B6AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = flybearTech;
+				TargetAttributes = {
+					84B37B2E207B9B140059B6AA = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 6NYVN9SM84;
+						ProvisioningStyle = Automatic;
+					};
+					84B37B47207B9B140059B6AA = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 6NYVN9SM84;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 84B37B2E207B9B140059B6AA;
+					};
+					84B37B52207B9B140059B6AA = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 6NYVN9SM84;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 84B37B2E207B9B140059B6AA;
+					};
+				};
+			};
+			buildConfigurationList = 84B37B2A207B9B140059B6AA /* Build configuration list for PBXProject "TaxCaculater" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84B37B26207B9B140059B6AA;
+			productRefGroup = 84B37B30207B9B140059B6AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84B37B2E207B9B140059B6AA /* TaxCaculater */,
+				84B37B47207B9B140059B6AA /* TaxCaculaterTests */,
+				84B37B52207B9B140059B6AA /* TaxCaculaterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84B37B2D207B9B140059B6AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B37BA3207E590A0059B6AA /* PdTaxMoneyCell.xib in Resources */,
+				8467B047208B4358001474CF /* PdTaxTitleCell.xib in Resources */,
+				84B37B9E207E58D50059B6AA /* PdTaxInsuranceCell.xib in Resources */,
+				84B37B42207B9B140059B6AA /* LaunchScreen.storyboard in Resources */,
+				84B37B3F207B9B140059B6AA /* Assets.xcassets in Resources */,
+				8471EEA020D41A1200D8B747 /* TaxFormView.xib in Resources */,
+				8471EE9820CD7EE000D8B747 /* TaxTitleHeadView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B37B46207B9B140059B6AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B37B51207B9B140059B6AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DD77D91C0254F07357FF0937 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaxCaculater-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84B37B2B207B9B140059B6AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B37B37207B9B140059B6AA /* AppDelegate.m in Sources */,
+				84B37B7B207E45C50059B6AA /* PdCollectionViewImageSudokuLayout.m in Sources */,
+				8467B051208C5205001474CF /* PdIndividualTaxSumModel.m in Sources */,
+				84B37B99207E549B0059B6AA /* CompanyInsuranceModel.m in Sources */,
+				8471EE9E20D419F800D8B747 /* TaxFormView.m in Sources */,
+				84B37BA2207E590A0059B6AA /* PdTaxMoneyCell.m in Sources */,
+				84B37B34207B9B140059B6AA /* main.m in Sources */,
+				84B37B8D207E53060059B6AA /* TaxModel.m in Sources */,
+				8467B046208B4358001474CF /* PdTaxTitleCell.m in Sources */,
+				84B37B96207E547F0059B6AA /* PersonInsuranceModel.m in Sources */,
+				8471EE9B20D415CD00D8B747 /* WXLabel.m in Sources */,
+				84B37B7A207E45C50059B6AA /* TaxViewController.m in Sources */,
+				8467B04D208B6E05001474CF /* PdTaxSumCell.m in Sources */,
+				84B37B7C207E45C50059B6AA /* PdSudokuItemLayoutConfigurator.m in Sources */,
+				84B37B9D207E58D50059B6AA /* PdTaxInsuranceCell.m in Sources */,
+				84B37B80207E47000059B6AA /* UIViewController+PdLogInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B37B44207B9B140059B6AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B37B4D207B9B140059B6AA /* TaxCaculaterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B37B4F207B9B140059B6AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B37B58207B9B140059B6AA /* TaxCaculaterUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84B37B4A207B9B140059B6AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84B37B2E207B9B140059B6AA /* TaxCaculater */;
+			targetProxy = 84B37B49207B9B140059B6AA /* PBXContainerItemProxy */;
+		};
+		84B37B55207B9B140059B6AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84B37B2E207B9B140059B6AA /* TaxCaculater */;
+			targetProxy = 84B37B54207B9B140059B6AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84B37B40207B9B140059B6AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84B37B41207B9B140059B6AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84B37B5A207B9B140059B6AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84B37B5B207B9B140059B6AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84B37B5D207B9B140059B6AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E2E7BEEEDA24E4572BC7E67 /* Pods-TaxCaculater.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6NYVN9SM84;
+				GCC_PREFIX_HEADER = "$(SRCROOT)//TaxCaculater/TaxCaculater.pch";
+				INFOPLIST_FILE = TaxCaculater/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flybear.TaxCaculater;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84B37B5E207B9B140059B6AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEEE1EC223D63CC29739B5AF /* Pods-TaxCaculater.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6NYVN9SM84;
+				GCC_PREFIX_HEADER = "$(SRCROOT)//TaxCaculater/TaxCaculater.pch";
+				INFOPLIST_FILE = TaxCaculater/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flybear.TaxCaculater;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		84B37B60207B9B140059B6AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6NYVN9SM84;
+				INFOPLIST_FILE = TaxCaculaterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flybear.TaxCaculaterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaxCaculater.app/TaxCaculater";
+			};
+			name = Debug;
+		};
+		84B37B61207B9B140059B6AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6NYVN9SM84;
+				INFOPLIST_FILE = TaxCaculaterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flybear.TaxCaculaterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaxCaculater.app/TaxCaculater";
+			};
+			name = Release;
+		};
+		84B37B63207B9B140059B6AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6NYVN9SM84;
+				INFOPLIST_FILE = TaxCaculaterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flybear.TaxCaculaterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TaxCaculater;
+			};
+			name = Debug;
+		};
+		84B37B64207B9B140059B6AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6NYVN9SM84;
+				INFOPLIST_FILE = TaxCaculaterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flybear.TaxCaculaterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TaxCaculater;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84B37B2A207B9B140059B6AA /* Build configuration list for PBXProject "TaxCaculater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B37B5A207B9B140059B6AA /* Debug */,
+				84B37B5B207B9B140059B6AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84B37B5C207B9B140059B6AA /* Build configuration list for PBXNativeTarget "TaxCaculater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B37B5D207B9B140059B6AA /* Debug */,
+				84B37B5E207B9B140059B6AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84B37B5F207B9B140059B6AA /* Build configuration list for PBXNativeTarget "TaxCaculaterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B37B60207B9B140059B6AA /* Debug */,
+				84B37B61207B9B140059B6AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84B37B62207B9B140059B6AA /* Build configuration list for PBXNativeTarget "TaxCaculaterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B37B63207B9B140059B6AA /* Debug */,
+				84B37B64207B9B140059B6AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84B37B27207B9B140059B6AA /* Project object */;
+}

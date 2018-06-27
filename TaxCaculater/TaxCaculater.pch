@@ -1,0 +1,31 @@
+//
+//  TaxCaculater.pch
+//  TaxCaculater
+//
+//  Created by admin on 2018/4/11.
+//  Copyright © 2018年 flybearTech. All rights reserved.
+//
+
+#ifndef TaxCaculater_pch
+#define TaxCaculater_pch
+
+#import <Masonry.h>
+#import <YYKit.h>
+#import "PdMacro.h"
+//#ifdef __OBJC__
+//
+//#import <Masonry.h>
+//
+//#end
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#define DEVICE_IS_IPHONE4         CGSizeEqualToSize(CGSizeMake(640,960), [[[UIScreen mainScreen] currentMode] size])//是否4
+#define DEVICE_IS_IPHONE5         CGSizeEqualToSize(CGSizeMake(640,1136), [[[UIScreen mainScreen] currentMode] size])//是否5
+#define DEVICE_IS_IPHONE6         CGSizeEqualToSize(CGSizeMake(750,1334), [[[UIScreen mainScreen] currentMode] size])//是否6
+#define DEVICE_IS_IPHONE6P        CGSizeEqualToSize(CGSizeMake(1242,2208), [[[UIScreen mainScreen] currentMode] size])//是否6P
+
+
+#endif /* TaxCaculater_pch */

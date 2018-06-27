@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TaxFormView">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBM-qT-Yun">
+                    <rect key="frame" x="0.0" y="0.0" width="85.5" height="44"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSy-Rq-99t">
+                    <rect key="frame" x="85.5" y="0.0" width="85.5" height="44"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="changePersonRate:" destination="iN0-l3-epB" eventType="touchUpInside" id="6WL-Kq-6l5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qon-OG-5B5">
+                    <rect key="frame" x="171" y="0.0" width="85" height="44"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="changePersonFund:" destination="iN0-l3-epB" eventType="touchUpInside" id="OQn-m9-8qT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpV-2y-dHn">
+                    <rect key="frame" x="256" y="0.0" width="85.5" height="44"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="changeCompanyRate:" destination="iN0-l3-epB" eventType="touchUpInside" id="Mre-mu-0nR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o30-xn-TrL">
+                    <rect key="frame" x="341.5" y="0.0" width="85.5" height="44"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="changeCompanyFund:" destination="iN0-l3-epB" eventType="touchUpInside" id="wXl-A8-qLc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="PBM-qT-Yun" secondAttribute="bottom" id="0fn-aC-9rJ"/>
+                <constraint firstItem="PBM-qT-Yun" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="42K-gy-OwR"/>
+                <constraint firstItem="zSy-Rq-99t" firstAttribute="leading" secondItem="PBM-qT-Yun" secondAttribute="trailing" id="75t-N9-iN6"/>
+                <constraint firstItem="ZpV-2y-dHn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CJM-f0-8Sy"/>
+                <constraint firstItem="ZpV-2y-dHn" firstAttribute="width" secondItem="PBM-qT-Yun" secondAttribute="width" id="DNP-XL-0q2"/>
+                <constraint firstItem="zSy-Rq-99t" firstAttribute="width" secondItem="PBM-qT-Yun" secondAttribute="width" id="Dfl-od-Qty"/>
+                <constraint firstItem="o30-xn-TrL" firstAttribute="leading" secondItem="ZpV-2y-dHn" secondAttribute="trailing" id="DtE-LS-cTs"/>
+                <constraint firstItem="zSy-Rq-99t" firstAttribute="height" secondItem="PBM-qT-Yun" secondAttribute="height" id="Jb6-Uc-Ylu"/>
+                <constraint firstItem="qon-OG-5B5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Lq9-8x-ixU"/>
+                <constraint firstAttribute="bottom" secondItem="zSy-Rq-99t" secondAttribute="bottom" id="MUx-Em-gN0"/>
+                <constraint firstItem="o30-xn-TrL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="O73-PA-kzV"/>
+                <constraint firstItem="ZpV-2y-dHn" firstAttribute="leading" secondItem="qon-OG-5B5" secondAttribute="trailing" id="OBQ-NW-IVq"/>
+                <constraint firstItem="zSy-Rq-99t" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PpR-ff-Nsw"/>
+                <constraint firstAttribute="bottom" secondItem="qon-OG-5B5" secondAttribute="bottom" id="RtS-8I-i4C"/>
+                <constraint firstItem="qon-OG-5B5" firstAttribute="leading" secondItem="zSy-Rq-99t" secondAttribute="trailing" id="TuF-ko-0rA"/>
+                <constraint firstItem="o30-xn-TrL" firstAttribute="width" secondItem="PBM-qT-Yun" secondAttribute="width" id="V01-ah-UfQ"/>
+                <constraint firstAttribute="trailing" secondItem="o30-xn-TrL" secondAttribute="trailing" id="btU-HF-0dh"/>
+                <constraint firstAttribute="bottom" secondItem="ZpV-2y-dHn" secondAttribute="bottom" id="byy-AC-iU3"/>
+                <constraint firstItem="qon-OG-5B5" firstAttribute="width" secondItem="PBM-qT-Yun" secondAttribute="width" id="k12-rA-nel"/>
+                <constraint firstAttribute="bottom" secondItem="o30-xn-TrL" secondAttribute="bottom" id="mXe-nH-o5V"/>
+                <constraint firstItem="ZpV-2y-dHn" firstAttribute="height" secondItem="PBM-qT-Yun" secondAttribute="height" id="nHp-ye-SFk"/>
+                <constraint firstItem="qon-OG-5B5" firstAttribute="height" secondItem="PBM-qT-Yun" secondAttribute="height" id="nWb-vP-dwJ"/>
+                <constraint firstItem="PBM-qT-Yun" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="r1I-YR-H0K"/>
+                <constraint firstItem="o30-xn-TrL" firstAttribute="height" secondItem="PBM-qT-Yun" secondAttribute="height" id="sSa-YS-khG"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="companyFundButton" destination="o30-xn-TrL" id="YI1-nA-lSm"/>
+                <outlet property="companyRateButton" destination="ZpV-2y-dHn" id="BgF-e2-2vs"/>
+                <outlet property="nameButton" destination="PBM-qT-Yun" id="sIf-3f-tJk"/>
+                <outlet property="personFundButton" destination="qon-OG-5B5" id="LYj-5E-W4W"/>
+                <outlet property="personRateButton" destination="zSy-Rq-99t" id="BkQ-QB-flv"/>
+            </connections>
+            <point key="canvasLocation" x="30" y="-162"/>
+        </view>
+    </objects>
+</document>
